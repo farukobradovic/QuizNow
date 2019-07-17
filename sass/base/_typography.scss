@@ -1,0 +1,114 @@
+body{
+    font-size: 1.7rem;
+    line-height: 1.6;
+    font-family: 'Indie Flower', cursive;
+}
+
+.heading-primary{
+    color: var(--color-typography-dark);
+    font-size: 4.5rem;
+    text-align: center;
+    color: var(--color-typography-light);
+    margin-top: 7rem;
+    position: relative;
+    &::after{
+        content: '';
+        position: absolute;
+        left:48%;
+        top: 7rem;
+        width: 5rem;
+        border-bottom: 3px solid var(--color-primary-dark);
+    }
+}
+
+.heading-secondary{
+    text-transform: uppercase;
+    color: var(--color-typography-light);
+    font-size: 3rem;
+    margin-bottom: 3rem;
+}
+
+.paragraph-question{
+    text-align: center;
+    font-size: 4rem;
+    margin-top: 5rem;
+    color: var(--color-typography-light);
+    position: relative;
+    &::after{
+        content: '';
+        position: absolute;
+        left:50%;
+        transform: translate(-50%);
+        top: 7rem;
+        width: 5rem;
+        border-bottom: 3px solid var(--color-primary-dark);
+    }
+}
+
+.paragraph-score{
+    color: var(--color-typography-light);
+    font-size: 3rem;
+    width: 15rem;
+    .score{
+        color: var(--color-primary-dark);
+        
+    }
+}
+
+.paragraph-quest{
+    font-size: 2rem;
+    color: var(--color-typography-light);
+}
+
+.paragraph-update{
+    font-size: 2rem;
+    color: var(--color-typography-light);
+    text-align: center;
+    margin-bottom: 1rem;
+
+    &:focus{
+        outline: none;
+    }
+}
+
+.heading-questions{
+    color: var(--color-typography-light);
+    text-align: center;
+    position: relative;
+    margin-bottom: 2rem;
+    &::after{
+        content: '';
+        position: absolute;
+        width: 2rem;
+        left: 50%;
+        top: 3rem;
+        transform: translate(-50%);
+        border-bottom: 2px solid var(--color-primary-dark);
+    }
+}
+
+.paragraph-update{
+    font-size: 3rem;
+}
+
+.paragraph-result{
+    font-size: 2.5rem;
+    margin-top: 5rem;
+    color: var(--color-typography-light);
+
+    a{
+        color: var(--color-primary-dark);
+        text-decoration: none;
+
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+}
+
+.paragraph-leaderboard{
+    color: var(--color-typography-light);
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+
+}

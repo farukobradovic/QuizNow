@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>QuizNow | Administrator</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/78ef64fa4d.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <nav class="navigation-main">
+        <div class="container">
+            <ul class="list-main">
+                <li class="list-main-item">
+                    <a href="index.html" class="list-main-item-link">Quiz<span class="color-icon">Now</span></a>
+                </li>
+                <li class="list-main-item">
+                    <a href="#" class="list-main-item-link active"><i class="fas fa-users-cog"></i>Administrator</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="administrator-section">
+        <h1 class="heading-primary">Administrator options <i class="fas fa-tools"></i></h1>
+        <div class="container">
+            <div class="box">
+                <p class="paragraph-quest">Enter Your Question</p>
+                <input type="text" class="input-quest" id="input-question" placeholder="Question...">
+                <p class="paragraph-quest">Enter Points</p>
+                <input type="text" class="input-quest" id="input-category" placeholder="Points for correct answer...">
+                <button class="button-add" id="add-question">Add Question</button>
+                <p class="paragraph-quest">Enter Answer (5 max)</p>
+                <input type="text" class="input-quest" id="input-answer" placeholder="Answer...">
+                <button class="button-add" id="add-answer">Add Answer</button>
+                <p class="paragraph-quest">Enter Correct Answer</p>
+                <input type="text" class="input-quest" id="input-correct" placeholder="Correct...">
+                <button class="button-add" id="add-correct">Add Correct Answer</button>
+            </div>
+            <div class="box" id="box-2">
+                <!-- <div class="update-heading"><p class="paragraph-update">Update section</p></div> -->
+                <div class="question-infos">
+                    <!-- <div class="options">
+                        <p class="question-infos-question">What is IT ? </p>
+                        <div class="options-sub"><span class="edit-question"><i class="fas fa-edit"></i></span> <span
+                                class="delete-question"><i class="fas fa-trash-alt"></i></span></div>
+                    </div> -->
+                </div>
+                <div class="answers">
+                    <!-- <div class="answer">
+                        <p class="answer-infos-question">1. Databases queries </p>
+                        <div class="options-sub"><span class="edit-answer"><i class="fas fa-edit"></i></span> <span
+                                class="delete-answer"><i class="fas fa-trash-alt"></i></span></div>
+                    </div>
+                    <div class="answer">
+                        <p class="answer-infos-question">2. Information Technology </p>
+                        <div class="options-sub"><span class="edit-answer"><i class="fas fa-edit"></i></span> <span
+                                class="delete-answer"><i class="fas fa-trash-alt"></i></span></div>
+                    </div>
+                    <div class="answer">
+                        <p class="answer-infos-question">3. Football team </p>
+                        <div class="options-sub"><span class="edit-answer"><i class="fas fa-edit"></i></span> <span
+                                class="delete-answer"><i class="fas fa-trash-alt"></i></span></div>
+                    </div>
+                    <div class="answer">
+                        <p class="answer-infos-question">3. Football team </p>
+                        <div class="options-sub"><span class="edit-answer"><i class="fas fa-edit"></i></span> <span
+                                class="delete-answer"><i class="fas fa-trash-alt"></i></span></div>
+                    </div>
+                    <div class="answer">
+                        <p class="answer-infos-question">3. Football team </p>
+                        <div class="options-sub"><span class="edit-answer"><i class="fas fa-edit"></i></span> <span
+                                class="delete-answer"><i class="fas fa-trash-alt"></i></span></div>
+                    </div> -->
+                </div>
+                <div class="category-answer-correct">
+                    <!-- <div class="category">
+                        <p class="category-infos-question">IT </p>
+                        <div class="options-sub"><span class="edit-answer"><i class="fas fa-edit"></i></span> <span
+                                class="delete-answer"><i class="fas fa-trash-alt"></i></span></div>
+                    </div>
+                    <div class="answer-correct">
+                        <p class="answer-correct-infos-question">2. Information Technology </p>
+                        <div class="options-sub"><span class="edit-answer"><i class="fas fa-edit"></i></span> <span
+                                class="delete-answer"><i class="fas fa-trash-alt"></i></span></div>
+                    </div> -->
+                </div>
+
+                <button class="button-add" id="button-add-submit">Submit</button>
+            </div>
+            <div class="box" id="box-3">
+                <div class="update">
+                    <!-- <p class="paragraph-update" contenteditable="true">What is IT ?</p>
+                     <button class="button-add">Update</button> -->
+                </div>
+
+                <div class="storage-questions">
+                    <!-- <h3 class="heading-questions">Questions</h3>
+                    <div class="question">
+                        <p class="question-question">What is IT ? </p>
+                        <div class="options-sub"><span class="edit-question"><i class="fas fa-edit"></i></span> <span
+                                class="delete-question"><i class="fas fa-trash-alt"></i></span>
+                        </div>
+                    </div>
+                    <div class="question">
+                        <p class="question-question">What is capital of France ? </p>
+                        <div class="options-sub"><span class="edit-question"><i class="fas fa-edit"></i></span> <span
+                                class="delete-question"><i class="fas fa-trash-alt"></i></span>
+                        </div>
+                    </div>
+                    <div class="question">
+                        <p class="question-question">How old is Lionel Messi ? </p>
+                        <div class="options-sub"><span class="edit-question"><i class="fas fa-edit"></i></span> <span
+                                class="delete-question"><i class="fas fa-trash-alt"></i></span>
+                        </div>
+                    </div>
+                    <div class="question">
+                        <p class="question-question">Who created C++ programming language ? </p>
+                        <div class="options-sub"><span class="edit-question"><i class="fas fa-edit"></i></span> <span
+                                class="delete-question"><i class="fas fa-trash-alt"></i></span>
+                        </div>
+                    </div>
+                    <div class="question">
+                        <p class="question-question">How far is Sun from Earth ? </p>
+                        <div class="options-sub"><span class="edit-question"><i class="fas fa-edit"></i></span> <span
+                                class="delete-question"><i class="fas fa-trash-alt"></i></span>
+                        </div>
+                    </div>
+                    <div class="buttons">
+                        <button class="button-next-previous">Previous</button>
+                        <button class="button-next-previous">Next</button>
+
+                    </div> -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/administrator.js"></script>
+</body>
+
+</html>
